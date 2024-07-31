@@ -1,0 +1,50 @@
+body{
+   margin: 0% 30% 0% 30%;
+   padding:10px 0px 5px 10px;
+   height: 100vh;
+   background: linear-gradient(45deg, #ff0081, #ff8c00, #4c9f70, #00c6ff);
+   background-size: 600% 600%;
+   animation: vibrantAnimation 20s ease infinite;
+
+
+}
+
+@keyframes vibrantAnimation {
+   0% { background-position: 0% 0%; }
+   25% { background-position: 100% 0%; }
+   50% { background-position: 100% 100%; }
+   75% { background-position: 0% 100%; }
+   100% { background-position: 0% 0%; }
+}
+
+.animated-heading {
+   margin-top: 15px;
+   font-size: 3rem;
+   font-family: 'Arial', sans-serif;
+   color: #333;
+   text-transform: uppercase;
+   animation: bounceColor 2s ease infinite;
+   text-align: center;
+}
+
+@keyframes bounceColor {
+   0% {
+       transform: translateY(0);
+       color: #333;
+   }
+   50% {
+       transform: translateY(-30px);
+       color: #ff6347; /* Tomato */
+   }
+   100% {
+       transform: translateY(0);
+       color: #4682b4; /* Steel Blue */
+   }
+}
+
+
+.pg{
+   margin-top: 20px;
+   align-items: center;
+   justify-content: center;
+}
